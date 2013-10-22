@@ -1,0 +1,26 @@
+{
+  "name": "Debug",
+  "title": "Debug",
+  "description": "Script to help debugging javascript",
+  "version": "1.0.0",
+  "homepage": "https://github.com/rbarros/debug.js",
+  "author": {
+    "name": "Ramon Barros",
+    "email": "contato@ramon-barros.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rbarros/debug.js.git"
+  },
+  "bugs": "https://github.com/rbarros/debug.js/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/rbarros/debug.js/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": []
+}
