@@ -38,14 +38,23 @@
 
   var Debug = function(status) {
     this.version = '1.0';
+    this.console = window.console;
+  };
+
+  Debug.prototype.log = function() {
+    this.console['log'](arguments);
+  };
+
+  Debug.prototype.info = function() {
+    this.console['info'](arguments);
+  };
+
+  Debug.prototype.warn = function() {
+    this.console['warn'](arguments);
   };
 
   window.Debug = Debug;
 
-  if (typeof window.log === 'undefined') {
-    window.log = function(textOrTag, Text) {
-      Debug.apply(this, arguments);
-    };
-  }
+  window.console = new Debug();
 
 }(jQuery, window));
