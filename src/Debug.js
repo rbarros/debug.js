@@ -118,7 +118,22 @@
   var Debug = function(status) {
     this.version = '1.0';
     this.console = window.console;
+<<<<<<< HEAD
     this.vconsole = document.getElementById('console');
+=======
+  };
+
+  Debug.prototype.log = function() {
+    this.console['log'](arguments);
+  };
+
+  Debug.prototype.info = function() {
+    this.console['info'](arguments);
+  };
+
+  Debug.prototype.warn = function() {
+    this.console['warn'](arguments);
+>>>>>>> b6f670ced6ab543be37a43f3527b429e9183894c
   };
 
   Debug.prototype.visibility = function() {
@@ -129,6 +144,7 @@
     }
   };
 
+<<<<<<< HEAD
   Debug.prototype.assert = function() {
     this.console['assert'](arguments);
   };
@@ -194,7 +210,7 @@
   };
 
   window.Debug = Debug;
-  
+
   window.console = new Debug();
 
 }(jQuery, window));
